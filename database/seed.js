@@ -10,6 +10,7 @@ for (var i = 0; i < 100; i++) {
     followers: Math.floor(Math.random() * 3,000 + 600),
     reposts: Math.floor(Math.random() * 800 + 160),
     plays: Math.floor(Math.random() * 20,000 + 5,000),
+    release_date: faker.date.past(),
     Comments: []
   }
   let randomComs = Math.floor(Math.random() * 30)
@@ -19,15 +20,18 @@ for (var i = 0; i < 100; i++) {
       username: faker.internet.userName(),
       time: faker.date.recent(),
       comment_body: faker.lorem.sentence(),
+      timestamp: true,
       Replies: []
     }
     song.Comments.push(comment);
     let randomReps = Math.floor(Math.random() * 2)
     for (var k = 0; k < randomReps; k++) {
       let reply = {
-        username: faker.internet.userName(),
         user_photo: faker.image.imageURL(),
-        reply_body: faker.lorem.sentence()
+        username: faker.internet.userName(),
+        time: faker.date.recent(),
+        reply_body: faker.lorem.sentence(),
+        timestamp: true
       }
       song.Comments[j].Replies.push(reply);
     }
