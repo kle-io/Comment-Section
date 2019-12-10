@@ -1,30 +1,19 @@
 import React from 'react';
 import Comment from './FeedComments.jsx';
+import styles from '../styles/Feed.css';
 
 class Feed extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      toggled: false;
-    }
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    e.preventDefault();
-    this.setState({
-      toggled: !this.state.toggled
-    })
   }
 
   render() {
     return (
-      <div>
-        <ul>
-          {props.Comments.map(comment => {
-            return <li><Comment comment={comment} handleClick={this.handleClick}/></li>
+      <div className={styles.Feed}>
+        <div className={styles.Feed_commentsNumber}>{(this.props.song.Comments.length).toString()} comments</div>
+        <ul className={styles.Feed_ul}>
+          {this.props.song.Comments.map(comment => {
+            return <Comment comment={comment} handleClick={this.props.handleClick} currentSong={this.props.song._id} />
           })}
         </ul>
       </div>

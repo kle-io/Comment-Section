@@ -1,0 +1,97 @@
+.songInfo {
+  display: flex;
+}
+
+.artist {
+  position: relative;
+  top: 30px;
+  left: 50px;
+  width: 120px;
+}
+
+.artist_image {
+  border-radius: 50%;
+}
+
+.artist_name {
+  margin: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.artist_stats {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex: 1;
+}
+
+.artist_statItem {
+  display: list-item;
+  margin-right: 14px;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 12px;
+}
+
+.recordingInfo {
+  padding-left: 200px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.recordingInfo_box {
+  background-color: #c5c5c5;
+  padding: 10px;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+
+.recordingInfo_buttonBar {
+  margin: 0 0 7px;
+}
+
+.recordingInfo_button_orange {
+  background-color: #f50;
+  border-color: #f50;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  margin: 0;
+  padding: 2px 11px 2px 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.recordingInfo_button {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  margin: 0;
+  padding: 2px 11px 2px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+

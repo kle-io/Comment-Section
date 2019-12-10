@@ -5,7 +5,7 @@ import CommentBar from '../client/components/CommentBar.jsx';
 
 describe('Feed', () => {
   const song = {
-    artist_photo: "randomImg.URL",
+    artist_photo: "https://loremflickr.com/640/480"
     artist: "John Denver",
     likes: 5,000
     followers: 2,500,
@@ -14,7 +14,7 @@ describe('Feed', () => {
     release_date: "05/10/2000"
     Comments: [
       {
-        user_photo: "randomImg.URL",
+        user_photo: "https://loremflickr.com/640/480",
         username: "Johnny69",
         time: "2:30",
         comment_body: "I'm a young 16 year old recording songs on my apple earbuds."
